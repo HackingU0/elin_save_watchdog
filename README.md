@@ -47,3 +47,16 @@ This will start monitoring the specified folder and will automatically delete th
 - If you encounter any issues, make sure that the directory paths are correct and that you have the required permissions to modify the folders.
 
 ---
+## To build your own binary
+Use pyinstaller to build your modified python file so you can run it easily
+```bash 
+pip install pyinstaller
+pyinstaller --onefile elin_watchdog.py
+```
+You can find elin_watchdog under /dist, use chmod +x to let it have premission to run
+```bash
+cd dist
+chmod +x elin_watchdog
+./elin_watchdog
+```
+---
