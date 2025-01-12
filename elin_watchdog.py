@@ -6,7 +6,8 @@ from watchdog.events import FileSystemEventHandler
 import re
 
 # Directory to monitor
-watch_directory = '/Users/elishaw/CXPBottles/Steam/drive_c/users/crossover/AppData/LocalLow/Lafrontier/Elin/Save'
+# Modify this to actual Save Folder Path!!!
+watch_directory = '/Users/username/CXPBottles/Steam/drive_c/users/crossover/AppData/LocalLow/Lafrontier/Elin/Save'
 
 class FolderHandler(FileSystemEventHandler):
     def __init__(self):
